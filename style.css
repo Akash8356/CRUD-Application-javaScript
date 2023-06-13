@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+:root{
+    --form-input-border-color:rgb(38, 157, 236);
+    --form-place-holder-color:rgb(99, 94, 94);
+    --form-submit-buttom-color:rgb(4, 152, 250);
+}
+#mainPageContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+
+}
+.employeeRegistrationMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.formcontain{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    /* background-color: #18bdff; */
+}
+
+/* .registrationForm{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+} */
+.registrationForm{
+    display: flex;
+    height: 80%;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: transparent;
+    /* margin-right: 2rem; */
+    /* background-color: red */
+}
+.alignright{
+    align-self: flex-end;
+    
+}
+.labelclass{
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 0.3rem;
+    color: #18bdff;
+
+}
+.inputfield{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 5px;
+}
+
+.formcontain{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.employeeDetailAndUpdateLayout{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+}
+.emlpoyeUpdateLayout{
+    height: 0%;
+    width: 100%;
+    background-color: transparent;
+    transition:  height 1s;
+    
+}
+.editdetailFormContainer{
+
+    height: 40%;
+    width: 100%;
+}
+.editformcontain{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+
+}
+#updateLayout{
+    visibility: visible;
+    background-color: transparent;
+}
+#updateformid{
+visibility: visible;
+transition: height 5s;
+
+background-color:pink ;
+}
+.updateform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* visibility: hidden; */
+    
+}
+.employeeDetail{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition:  height 1s;
+    
+
+}
+
+.updateEmployeeDetailLayout{
+
+    height: 60%;
+    width: 100%;
+}
+#tableHeading{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    padding-top: 15px;
+    color: #18bdff;
+    /* background-color: #18bdff; */
+    
+}
+.tableheadingpad{
+    padding-top: 0;
+
+}
+
+#employeedata{
+    max-height: 90%;
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+/* 8888888888888888888888888888 */
+#dataScroll{
+    width: 100%;
+    height: 100%;
+ }
+ thead{
+    position: sticky;
+    top: 0;
+    height: 50px;
+    /* border: 1px solid rgb(226, 48, 17); */
+    /* border: none; */
+    background-color: transparent;
+    
+ 
+}
+ table{
+    border-spacing: 0px;
+    /* padding: 1rem 0.5rem;  */
+    border: none;
+    background-color: transparent;
+    /* margin: 0px;  */
+}
+.columnHead{
+    background-color: transparent;
+    font-size: 24px;
+    border-collapse: separate;
+
+    
+    /* border-radius: 1rem; */
+/* border: 2px solid red; */
+
+    
+}
+
+#dataHeadin{
+color: white;
+background-color: rgb(83, 159, 179);
+border:1px;
+border-radius: 20px;
+}
+.rowData{
+    background-color: rgb(110, 111, 112);
+    /* border: none; */
+    height: 3rem;
+    /* outline: 5px solid transparent; */
+    /* margin-bottom: 10px; */
+    border-radius: 10px;
+    ;
+  
+}
+.data{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    
+}
+
+td{
+    
+    /* color: rgb(0, 0, 0);  */
+    border:0.7px solid black; 
+    
+}
+
+/* ///////////////////////Button css */
+.deletbutton {
+    background-color: #f08945; /* Green */
+    border: none;
+    margin: 1px 3px;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+  }
+.editbutton {
+    background-color: #ffda0b; /* Green */
+    border: none;
+    margin: 1px 3px;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+  }
+  .updatButton{
+    background-color: #18bdff; /* Green */
+    border: none;
+    margin: 1px 3px;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+  }
+.addButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    /* margin: 1px 3px; */
+    width: 7rem;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    /* margin-left: 10px; */
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  .disabled{
+    background-color: #0c0e0c; /* Green */
+    border: none;
+    /* margin: 1px 3px; */
+    width: 7rem;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    /* margin-left: 10px; */
+    margin-right: 30px;
+    margin-top: 10px;
+    visibility: hidden;
+
+  }
+  .deletbuttonhide{
+    visibility: hidden;
+  }

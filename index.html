@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    
+</head>
+
+<body>
+
+    <section id="mainPageContainer">
+        <div class="employeeRegistrationMainContainer">
+            <div class="formcontain">
+                
+                <div class="registrationForm">
+                    <!-- <form class="registrationForm"> -->
+                        <!-- <div class="formspac"> -->
+                            <label for="empId " class="labelclass">Employee ID</label>
+                            <input id="addId" class="inputfield"type="number" placeholder="Enter Employee ID" >
+                            <p id="iderror" class="error"></p>
+                            <label for="fname" class="labelclass">First Name</label>
+                            <input id="addfname"class="inputfield" type="text" placeholder="Enter Your Name" >
+                            <p id="fnerror"></p>
+                            <label for="lname" class="labelclass">last Name</label>
+                            <input id="addlname"class="inputfield"type="text" placeholder="Enter Your last" >
+                            <p id="lnerror"></p>
+                            <label for="age" class="labelclass">Age</label>
+                            <input id="addage" class="inputfield"type="number" placeholder="Enter Your age">
+                            <p id="agerror"></p>
+                            <label for="gender" class="labelclass">Gender</label>
+                                    <select name="gender" id="addgender"class="inputfield" >
+                                        <option value="selectGender" >Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="others">Others</option>
+                                        
+                                    </select>
+                                    <p id="gderror"></p>
+                            <button  id="add" class="addButton alignright" onclick="checkevent()">Add</button>
+        
+                        <!-- </div> -->
+                       
+                        
+                    <!-- </form> -->
+    
+                </div>
+            </div>
+            <div class="employeeDetailAndUpdateLayout">
+
+                <div id="updateLayout" class="emlpoyeUpdateLayout ">
+                    
+                    <div  id="updateformid" class="updateform">
+                        <div class="editformcontain">
+
+
+                            <!-- <form  id="updateformid" class="editformcontain editformcontain "> -->
+                                <div>
+                                    <label for="editmpId">Employee ID</label>
+                                    <input id="editId" type="number" placeholder="Enter Employee ID" required>
+                                    <p id="iderror"></p>
+                                    <label for="editfname">First Name</label>
+                                    <input  id="editfname"type="text" placeholder="Enter Your Name" required>
+                                    <p id="iderror"></p>
+                                    <label for="editlname">last Name</label>
+                                    <input id="editlname"type="text" placeholder="Enter Your last" required>
+                                    <p id="iderror"></p>
+        
+                                </div>
+                                <div>
+                                    <label for="editage">Age</label>
+                                    <input id="editage" type="number" placeholder="Enter Your age" required>
+                                    <label for="editgender">Gender</label>
+                                    <select name="gender" id="editgender" placeholder="selectGender">
+                                        <option value="selectGender" >Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="others">Others</option>
+                                        
+                                    </select>
+        
+                                </div>
+        
+                                <button type="submit" id="update" class="updatButton" onclick="updateDataHideForm()">Update</button>
+        
+                            <!-- </form> -->
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div id="detailLayout" class="employeeDetail">
+                    <h1 id="tableHeading">Employee Details</h1>
+                   
+                    <div id="employeedata">
+                        <table id="dataScroll">
+                            <thead id="dataHead">
+                                <tr id="dataHeadin">
+                                    <th class="columnHead">E-ID</th>
+                                    <th class="columnHead">First Name</th>
+                                    <th class="columnHead">Last Name</th>
+                                    <th class="columnHead">Age</th>
+                                    <th class="columnHead">Gender</th>
+                                    <th class="columnHead">Action</th>
+                                </tr>
+
+                            </thead>
+                            <tbody id="table_body">
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script1.js"></script>
+</body>
+
+</html>
